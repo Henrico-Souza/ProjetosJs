@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url(button.css);
+@import url(modal.css);
+@import url(lista-clientes.css);
+@import url(delete-modal.css);
+
+*{
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color: aliceblue; 
+    --secondary-color: rgb(63, 172, 240);
+    --tertiary-color: rgb(0, 0, 117);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header{
+    height: 50px;
+    background-color: var(--primary-color);
+    padding: 5px;
+    align-content: center;
+    border-bottom: 0.3px solid var(--tertiary-color);
+}
+
+.top_bar{
+    font-size: x-large;
+    margin-left: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /*! o flex-grow extende o main para ocupar o maior espaço possivel (e empurra o footer para baixo), assim deixando a lista maior para visualização */
+    width: 90%;
+    margin: 5vh auto;
+    gap: 20px;
+    padding: 30px;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.row_list{
+    font-size: 16px;
+}
+
+footer {
+    width: 100;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+}
+
+@media screen and (max-width: 620px ){
+    header{
+        height: 40px;
+    }
+
+    main{
+        width: 75%;
+        gap: 35px;
+        margin: 6vh auto;
+        padding: 17px;
+    }
+}
+
+@media screen and (max-width: 980px ) {
+    main{
+        width: 85%;
+        gap: 30px;
+        margin: 6vh auto;
+    }
+}
+
+@media screen and (max-width: 480px ){
+    main{
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 400px ){
+    .row_list{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px ){
+    .row_list{
+        font-size: 12px;
+    }
+}

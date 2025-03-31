@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header>
+        <h1 class="top_bar">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button green mobile" id="cad-cli">Cadastrar</button>
+        <button type="button" class="button green mobile" id="cad-cli-mbl"><i class="fa-solid fa-plus"></i></button>
+        <table class="rec_list" id="table-client">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal_content">
+                <header class="modal_header">
+                    <h2 id="title-client"></h2>
+                    <span class="modal_close" id="modal-close"><i class="fa-solid fa-xmark"></i></span>
+                </header>
+                <form action="" class="modal_form" id="form">
+                    <div class="modal_input">
+                        <label for="nome" class="modal_lbl">Nome</label>
+                        <input type="text" data-index="new" id="nome" class="modal_field" placeholder="Digite o nome do cliente" required >
+                    </div>
+                    <div class="modal_input">
+                        <label for="e-mail" class="modal_lbl">Email</label>
+                        <input type="email" name="" id="e-mail" class="modal_field" placeholder="Digite o e-mail do cliente" required >
+                    </div>
+                    <div class="modal_input">
+                        <label for="celular" class="modal_lbl">Celular</label>
+                        <input type="tel" name="" id="celular" class="modal_field" placeholder="Digite o celular do cliente" required >
+                    </div>
+                    <div class="modal_input">
+                        <label for="estado" class="modal_lbl">Estado</label>
+                        <input type="text" name="" id="estado" class="modal_field" placeholder="Estado atual do cliente " required >
+                    </div>
+                    <div class="modal_input">
+                        <label for="cidade" class="modal_lbl">Cidade</label>
+                        <input type="text" name="" id="cidade" class="modal_field" placeholder="Cidade atual do cliente" required >
+                    </div>
+                    <footer class="modal_footer">
+                        <button type="button" class="button green" id="salvar">Salvar</button>
+                        <button type="button" class="button red" id="cancelar">Cancelar</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+        <div class="delete_modal" id="delete_modal">
+            <div class="delete_content">
+                <header class="delete_header">
+                    <h2>Excluir Cliente</h2>
+                </header>
+                <h3>ATENÇÃO</h3>
+                <p class="confirm_message" id="confirm-message"></p>
+                <div class="delete_btn">
+                    <button type="button" class="button green" id="confirm-delete">Excluir</button>
+                    <button type="button" class="button red" id="cancel-delete">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; HenricoSouza
+    </footer>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+

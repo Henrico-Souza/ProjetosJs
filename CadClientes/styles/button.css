@@ -1,0 +1,73 @@
+:root{
+    --primary-color: aliceblue; 
+    --secondary-color: rgb(63, 172, 240);
+    --tertiary-color: rgb(0, 0, 117);
+}
+
+.button{
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+    background-color: lightblue;
+    border: 0.3px solid var(--tertiary-color);
+    border-radius: 3px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.button.green:hover{
+    background-color: green;
+    color:white;
+}
+
+.button.red:hover{
+    background-color: red;
+    color: white;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.15);
+}
+
+#cad-cli{
+    width: 200px;
+    font-size: 15px;
+    margin: 0.2vh auto;
+    margin-bottom: 20px;
+}
+
+#cad-cli-mbl{
+    display: none;
+}
+
+#salvar{
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 970px){
+   .button{
+    width: 55px;
+    height: 25px;
+    font-size: 12px;
+   }
+}
+
+@media screen and ( max-width: 320px ) {
+    #cad-cli{
+        display: none;
+    }
+
+    #cad-cli-mbl{
+        display: inline;
+        margin: 1vh auto;
+        width: 50px;
+    }
+
+    .button{
+        width: 65px;
+        height: 30px;
+        font-size: 12.5px;
+    }
+}
